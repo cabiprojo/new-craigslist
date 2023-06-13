@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>New Craigslist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbnm3w9RV4lDF-LzZ6TozBbp5yAgiooZg
+&map_ids=b074175caee3fe8a&callback=initMap"></script>
+    
+</head>
+<header>
+    <div class="navbar">
+        <div class="left-section">
+            <a href="index.html" class="logo" style="text-decoration: none;">craigslist</a>
+            </div>
+        <div class="middle-section">
+            <div class="wrapper0">
+                <input type="text" class="search-bar0" name="search" id="search0" placeholder="Search">
+                <div class="results0">
+                    
+                </div>
+                
+            </div>
+        </div>
+            <!--<input class="search-bar" type="text" placeholder="What are you looking for today?"></div> -->
+        <div class="right-section">
+            
+            <!--<p class="create-a-posting" >Create a Posting</p>-->
+            <a href="about.html" class="about" style="color:white">About</a>
+            <a href="#" class="join" id="join-link">Join</a>
+            <a href="#" class="sign-in" id="sign-in-link">Sign In</a>
+            
+        </div>
+</header>
+<body>
+    <div id="join-modal" class="modal">
+        <div class="modal-content">
+          <a href="#" class="close" id="join-close-btn">&times;</a>
+          <h2>Join Craigslist</h2>
+         
+          <div class="social-buttons">
+            <button class="continue-facebook">Continue with Facebook</button>
+            <button class="continue-google">Continue with Google</button>
+            <button class="continue-apple">Continue with Apple</button>
+          </div>
+          <p>------------------------------OR-------------------------------</p>
+          <input type="email" class="modal-email" id="email" name="email" placeholder="Enter your email">
+          <input type="email" class="modal-email" id="email" name="email" placeholder="Create a password">
+          <button type="submit" class="continue">Join</button>
+          <p>By joining I agree to receive emails from Craigslist.</p>
+        </div>
+      </div>
+
+      <div id="sign-in-modal" class="modal">
+        <div class="modal-content">
+          <a href="#" class="close" id="sign-in-close-btn">&times;</a>
+          <h2>Sign In to Craigslist</h2>
+          
+          <div class="social-buttons">
+            
+            <button class="continue-facebook">Continue with Facebook</button>
+            <button class="continue-google">Continue with Google</button>
+            <button class="continue-apple">Continue with Apple</button>
+            
+          </div>
+          <p>------------------------------OR-------------------------------</p>
+          <input type="email" class="modal-email" id="email" name="email" placeholder="Email">
+          <input type="email" class="modal-email" id="email" name="email" placeholder="Password">
+          <button type="submit" class="continue">Continue</button>
+        </div>
+      </div>
+
+
+  <div class="slider">
+        <img src="https://www.wellandgood.com/wp-content/uploads/2020/05/GettyImages-is-yard-work-good-exercise-Kathrin-Ziegler.jpg" alt="Image 1" class="slide active">
+        <img src="https://cdn.gobankingrates.com/wp-content/uploads/2021/06/female-real-estate-agent-hands-keys-to-couple_iStock-1244900905.jpg" alt="Image 2" class="slide">
+        <img src="https://assets.entrepreneur.com/content/3x2/2000/1629732658-shutterstock-1389068438.jpg?format=pjeg&auto=webp" alt="Image 3" class="slide">
+    </div>
+    <div class="top-block">
+        <p class="mission">Get what you need, when you want</p>
+        <div class="wrapper1">
+            <input type="text" class="search-bar1" name="search" id="search1" placeholder="Search">
+            <div class="results1">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mid-block">
+    <div class="left-mid-block">
+      <h1 class="discover-by-category">Discover by category</h1>
+      <div class="categories">
+        <div class="categories1">
+          <ul class="category" data-category="community">Community</ul>
+          <ul class="category" data-category="services">Services</ul>
+          <ul class="category" data-category="forums">Forums</ul>
+        </div>
+        <div class="categories2">
+          <ul class="category" data-category="housing">Housing</ul>
+          <ul class="category" data-category="for-sale">For Sale</ul>
+          <ul class="category" data-category="jobs">Jobs</ul>
+        </div>
+      </div>
+    </div>
+      <div class="right-mid-block">
+        <div class="category-results">
+          <ul class="category-list" id="category-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="create-block">
+      <div class="create-block-container">
+        <h1 class="create-block-heading">Connect, share, and engage</h1>
+        <p class="create-block-subtitle">Make postings to access our thriving online community of buyers and sellers</p>
+        <button class="create-block-button">Create your posting</button>
+      </div>
+    
+    </div>
+
+    <div class="map-container">
+      <h2 id="city-heading">Find postings near <span id="map-text">see map</span></h2>
+      <div id="map"></div>
+      
+    </div>
+
+    
+
+
+    <div class="about-block">
+      <div class="about-block-container">
+        <h1 class="about-heading">This is Craigslist</h1>
+        <p class="about-description">Founded in 1995 by Craig Newmark, Craigslist is a renowned online platform 
+          dedicated to community-driven interactions. Beginning as an email 
+          distribution list in San Francisco, Craigslist has evolved into a global marketplace 
+          serving millions of users across various cities and categories.
+        </p>
+        
+      </div>
+      <a href="about.html">
+        <button class="about-block-button">Learn more</button>
+      </a>
+    </div>
+    
+    <div class="contact-block">
+        <p class="contact-logo">craigslist</p>
+        <div class="icons-container">
+            <div class="icons">
+                <a href="https://www.facebook.com"><img class="facebook" src="https://www.emerson.com/resource/blob/footer-social-icon-facebook-data-3668762.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img class="twitter" src="https://www.emerson.com/resource/blob/footer-social-icon-twitter-data-3668768.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com"><img class="youtube" src="https://www.emerson.com/resource/blob/footer-social-icon-youtube-data-3668772.png" alt="Youtube"></a>
+
+            </div>
+        </div>
+      </div>
+</body>
+
+
+
+
+<script>
+
+
+
+    // Get all slide elements
+    const slides = document.querySelectorAll('.slide');
+    
+    let currentIndex = 0;
+    
+    function showNextSlide() {
+    // Hide current slide
+    slides[currentIndex].classList.remove('active');
+    
+    // Calculate index of next slide
+    currentIndex = (currentIndex + 1) % slides.length;
+    
+    // Show next slide
+    slides[currentIndex].classList.add('active');
+    }
+    
+    // Show the first slide initially
+    slides[currentIndex].classList.add('active');
+    
+    // Start the slider
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+    
+      
+      const searchInput0 = document.getElementById('search0');
+      const searchInput1 = document.getElementById('search1');
+      const searchWrapper0 = document.querySelector('.wrapper0');
+      const searchWrapper1 = document.querySelector('.wrapper1');
+      const results0Wrapper = document.querySelector('.results0');
+      const results1Wrapper = document.querySelector('.results1');
+    
+    
+const dataJsonPath = '/data.json';
+
+fetch(dataJsonPath)
+  .then(response => response.json())
+  .then(data => {
+    // Assign the array to the searchable variable
+    const searchable = data.searchable;
+        
+    
+      searchInput0.addEventListener('keyup', () => {
+        let results0 = [];
+        let input0 = searchInput0.value;
+        
+    
+        if (input0.length) {
+          results0 = searchable.filter((item) => {
+            return item.toLowerCase().includes(input0.toLowerCase());
+          });
+        }
+        renderResults0(results0);
+      }); 
+    
+    
+      function renderResults0(results0) {
+      if (!results0.length) {
+        return searchWrapper0.classList.remove('show');
+      }
+    
+      const limitedResults = results0.slice(0, 8); // Limiting the results to 8 items
+    
+      const content = limitedResults
+        .map((item) => {
+          return `<li>${item}</li>`;
+        })
+        .join('');
+    
+      searchWrapper0.classList.add('show');
+      results0Wrapper.innerHTML = `<ul>${content}</ul>`;
+    }
+    
+      searchInput1.addEventListener('keyup', () => {
+        let results1 = [];
+        let input1 = searchInput1.value;
+        if (input1.length) {
+          results1 = searchable.filter((item) => {
+            return item.toLowerCase().includes(input1.toLowerCase());
+          });
+        }
+        renderResults1(results1);
+      });
+      
+      
+      function renderResults1(results1) {
+      if (!results1.length) {
+        return searchWrapper1.classList.remove('show');
+      }
+    
+      const limitedResults = results1.slice(0, 8); // Limiting the results to 8 items
+    
+      const content = limitedResults
+        .map((item) => {
+          return `<li>${item}</li>`;
+        })
+        .join('');
+    
+      searchWrapper1.classList.add('show');
+      results1Wrapper.innerHTML = `<ul>${content}</ul>`;
+    }
+    
+
+    });
+    
+      
+    const categories = document.querySelectorAll('.category');
+    const categoryList = document.getElementById('category-list');
+    
+    // Define the category lists
+    const categoryLists = {
+      community: [
+        'Activities', 'Artists', 'Childcare', 'Classes', 'Events', 'Groups', 'Local News',
+        'Lost & Found', 'Musicians', 'Pets', 'Politics', 'Raves',
+        'Rideshare', 'Volunteers'
+      ],
+      housing: [
+        'Apartments', 'Housing', 'Office / Commercial', 'Parking / Storage',
+        'Rooms', 'Temporary', 'Vacation Rentals'
+      ],
+      services: [
+        'Automotive', 'Beauty', 'Cell/Mobile', 'Computer', 'Creative', 'Cycle', 'Event', 'Garden',
+        'Financial', 'Health', 'Household', 'Moving', 'Legal', 'Lessons', 'Marine', 'Pet',
+        'Real Estate', 'Skilled Trade', 'Ads', 'Travel', 'Write'
+      ],
+      'for-sale': [
+        'Antiques', 'Arts+Crafts', 'Aviation', 'Baby+Kid',
+        'Barter', 'Health', 'Bike Parts', 'Bikes', 'Boats', 'Books',
+        'Cars', 'CDs', 'Mobile', 'Clothes', 'Collectibles', 'Computer',
+        'Electronics', 'Garden', 'Free', 'Furniture', 'General',
+        'Equipment', 'Household', 'Jewelry', 'Materials',
+        'Music', 'Film', 'Sporting', 'Tickets', 'Tools', 'Toys',
+        'Games'
+      ],
+      forums: [
+        'Arts','Autos', 'Beauty', 'Bikes', 'Celebs','Cosmos', 'Diet',
+       'Eco', 'Film', 'Food', 'Gaming', 'Garden',
+       'Help', 'History', 'Housing', 'Jobs', 'Jokes', 'Legal', 'Marriage', 'Money',
+        'Music', 'Parent', 'Pets', 'Politics', 'Recover', 'Religion',
+        , 'Science', 'Sports', 'Tax', 'Travel', 'TV', 'Vegan', 'Words'
+      ],
+      jobs: [
+        'Finance', 'Office', 'Engineering', 'Art / Design',
+        'Science', 'Business', 'Customer Service', 'Education',
+        'Food / Bev', 'Government', 'Human Resources', 'Legal',
+        'Manufacturing', 'Marketing', 'Medical', 'Nonprofit', 'Real Estate',
+        'Retail']
+    
+      
+      // Add more categories and corresponding lists as needed
+    };
+    
+    // Add click event listeners to category boxes
+    categories.forEach(category => {
+      category.addEventListener('click', () => {
+        const selectedCategory = category.dataset.category;
+        // Call a function to populate the right-mid-block based on the selected category
+        populateCategoryList(selectedCategory);
+    
+        categories.forEach(cat => cat.classList.remove('active'));
+        
+        // Add 'active' class to the clicked category
+        category.classList.add('active');
+      });
+    });
+    
+    // Function to populate the right-mid-block with the selected category's list
+    function populateCategoryList(category) {
+      // Clear the existing content
+      categoryList.innerHTML = '';
+    
+      // Retrieve the corresponding list based on the selected category
+      const selectedList = categoryLists[category];
+    
+      // Create list items and append them to the categoryList
+      selectedList.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = item;
+        categoryList.appendChild(listItem);
+      });
+    }
+    
+    
+    
+    </script>
+
+
+</html>
+
+
