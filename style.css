@@ -238,7 +238,7 @@ width:75px;
 
   #map {
     width: 70%;
-    height: 60vh;
+    height: 600px;
   }
 
 .mid-block {
@@ -504,149 +504,8 @@ width:75px;
   
 
 
- @media (max-width: 1000px) {
-  .navbar {
-    flex-direction: row;
-    height: 80px;
-    padding-bottom: 20px;
-  }
-  
-  .logo {
-    margin-right:0;
-
-  }
-
-  .mission {
-    font-size: 50px;
-    width:80%;
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .left-section,
-  .middle-section,
-  .right-section {
-    margin: 0;
-  }
-
-  .top-block {
-    background-color: #8f419e;
-    height:500px;
-  }
-
-  .middle-section{
-    margin-left:10px;
-  }
-
-  .create-a-posting{
-    display: none;
-  }
-
-  .slider {
-    display:none;
-    height:auto;
-  }
-
-  .logo {
-    margin: auto;
-  }
-
-  .search-bar1 {
-    display: block;
-  }
-
-  .join,
-  .sign-in {
-    margin-left: auto;
-    margin-right: 30px;
-  }
-
-  .mid-block{
-    height:800px;
-  }
-
-  .left-mid-block {
-    margin-left:0;
-    flex-direction: column;
-  }
-
-  .categories {
-    flex-direction: column;
-    
-  }
-
-  .categories1,
-  .categories2 {
-  margin-right: 0px;
-  text-align: center;
-}
-
-.categories1 ul,
-.categories2 ul {
-  width: 180px;
-  height:80px;
-  
-  margin-bottom: 0px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.category-results {
-  margin-top:200px;
-  
-  height:300px;
-}
-
-}
 
 
-@media (max-width: 700px) {
-  .top-block {
-    width:100%;
-    height:400px;
-  }
-
-  .search-bar0 {
-    display: none !important;
-  }
-
-  .wrapper1 {
-    margin-left:15% !important;
-    width:300px !important;
-  }
-
-  .search-bar1 {
-    margin-left: 0px;
-  }
-
-  .mission {
-    font-size: 40px;
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .mid-block{
-    height:800px;
-  }
-
-  .categories {
-    margin-left: 10px;
-  }
-
-  .category-results {
-    justify-content: center;
-    margin-top: 200px;
-    height: 700px ;
-    
-    margin-bottom: 30px;
-  }
-
-  .category-results ul {
-    font-size: 14px;
-    margin-bottom: 10px;
-    padding-bottom: 3px;
-  }
-}
 
  .top-block .wrapper1 {
     
@@ -1016,21 +875,5 @@ input:focus {
   }
   
 
-  @media (max-width: 1000px) {
-    .about-image-text{
-        font-size: 20px;
-    }
 
-    .textboxes p{
-        font-size:15px;
-        width:200px;
-    }
-
-    .slide-in-left {
-
-        padding-left:5%;
-     
-      }
-
-
-  }
+  
