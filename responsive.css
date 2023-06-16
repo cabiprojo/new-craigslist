@@ -142,11 +142,17 @@
     padding-top:100px;
     
   }
+
+  .slide-in-left {
+    opacity: 1;
+    padding-left:15%;
+ 
+  }
   
   }
   
   
-  @media (max-width: 700px) {
+  @media (max-width: 767px) {
     .mid-block {
         background-color: aqua;
     }
@@ -195,5 +201,36 @@
       margin-bottom: 10px;
       padding-bottom: 3px;
     }
+
+    
+      .about-image-text {
+        font-size: 10px;
+        word-spacing: 2px;
+        line-height: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height:fit-content;
+        color: #fff;
+        padding: 20px;
+      }
+
+    .about-image{
+        height:400px;
+      }
+
+      .history-heading{
+        padding-top: 20px;
+      }
+
+      .slide-in-left {
+        opacity: 1;
+        padding-left:5%;
+     
+      }
+    
+    
   }
   
