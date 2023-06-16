@@ -227,12 +227,12 @@
 
       .slide-in-left {
         opacity: 1;
-        padding-left:5%;
+        padding-left:5% !important;
      
       }
 
       .paragraph {
-        width:300px;
+        width:300px !important;
       }
     
     
