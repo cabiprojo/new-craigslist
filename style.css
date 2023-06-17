@@ -609,6 +609,10 @@ input:focus {
     
   }
 
+.about-top{
+  position:relative;
+}
+
   .about-image {
     position:relative;
     width: 100%; /* 100% of the viewport width */
