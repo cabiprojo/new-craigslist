@@ -124,12 +124,9 @@
 
   .about-image-text {
     font-size: 15px;
-    word-spacing: 2px;
     line-height: 25px;
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 80%;
     height:fit-content;
     color: #fff;
@@ -227,12 +224,18 @@
 
       .slide-in-left {
         opacity: 1;
-        padding-left:5% !important;
+        padding-left:5%;
      
       }
 
       .paragraph {
-        width:300px !important;
+        width:200px !important;
+      }
+
+      .about-description {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 1.2;
       }
     
     
