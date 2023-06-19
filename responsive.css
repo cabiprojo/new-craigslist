@@ -22,7 +22,7 @@
     }
 
     .textboxes p{
-        font-size:15px;
+        font-size:20px;
         width:200px;
     }
 
@@ -145,17 +145,26 @@
     padding-left:15%;
  
   }
+
+  .about-block-container {
+    width:600px;
+  }
   
   }
   
   
   @media (max-width: 767px) {
-    .mid-block {
-        background-color: aqua;
-    }
+ 
     .top-block {
       width:100%;
-      height:300px;
+      height:400px;
+    }
+
+    .slide {
+ 
+      width:100%;
+
+      height:450px;
     }
   
     .search-bar0 {
@@ -201,9 +210,9 @@
 
     
       .about-image-text {
-        font-size: 10px;
+        font-size: 18px;
         word-spacing: 2px;
-        line-height: 15px;
+        line-height: 25px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -215,8 +224,10 @@
       }
 
     .about-image{
-        height:300px;
+        height:550px;
       }
+
+  
 
       .history-heading{
         padding-top: 20px;
@@ -230,6 +241,38 @@
 
       .paragraph {
         width:200px !important;
+
+      }
+
+      #city-heading {
+        font-size: 30px;
+      }
+
+      .category {
+        display: block;
+        background-color: white;
+        padding: 10px;
+        font-size: 15px;
+        border-color: purple;
+        border-style: solid;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        font-weight: bold;
+      }
+      
+
+      .categories1 ul,
+      .categories2 ul {
+        width:80px;
+        padding:10px;
+        margin-bottom: 10px;
+      }
+
+
+
+      .about-block-container {
+        width:400px;
       }
 
       .about-description {
